@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    color: white; /* Default text color */
+}
+
+hr {
+    width: 150rem;
+}
+
+/* Wordle Title */
+#title {
+    font-size: 12rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Wordle Board */
+#board {
+    height: 40rem;
+    width: 60rem;
+    margin: 20px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Wordle Answer */
+#answer {
+    margin-top: 600px;
+    font-size: 5rem;
+}
+
+/* Keyboard */
+#keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.keyboard-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    color: white;
+    font-weight: bold;
+    height: 10rem;
+    width: 12rem;
+    font-size: 6rem;
+    padding: 20px 15px;
+    margin: 10px;
+    border-radius: 10%;
+    background-color: #7c7c7c;
+    cursor: pointer;
+}
+
+#keyboard button[data-key="Enter"],
+#keyboard button[data-key="Backspace"] {
+    width: 20rem;
+}
+
+.key:hover {
+    background-color: #888888;
+}
+
+.key:active {
+    background-color: #b3b3b3;
+}
+
+/* Shake Animation */
+.shake {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-20px); }
+    50% { transform: translateX(20px); }
+    75% { transform: translateX(-20px); }
+}
+
+/* Tiles */
+.tile {
+    border: 2px solid rgba(211, 211, 211, 0.603);
+    width: 10rem;
+    height: 10rem;
+    margin: 0.5rem;
+    font-size: 6rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transition: transform 1s ease-in-out;
+}
+
+.tile.flip {
+    transform: rotateX(360deg);
+}
+
+/* Tile Color States */
+.correct, .tile.correct.flip {
+    background-color: rgb(37, 129, 37);
+    border-color: white;
+}
+
+.present, .tile.present.flip {
+    background-color: rgb(153, 153, 47);
+    border-color: white;
+}
+
+.absent, .tile.absent.flip {
+    background-color: rgb(75, 75, 75);
+    border-color: white;
+}
