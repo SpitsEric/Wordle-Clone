@@ -8,34 +8,33 @@ var word = "";   // The word the player needs to guess
 
 // On page load
 window.onload = async function () {
-    // Fetch a random 5-letter word from dictionary API
-    word = await getRandomWord();
-    // Initialize the board
+    word = await getRandomWord(); // Fetch random word
+    //console.log("Chosen word:", word); // Debugging purpose
     initialize();
-    // Set focus to the document body to capture keyboard events
     document.body.focus();
 };
 
-// Function to fetch a random 5-letter word from an external API
 async function getRandomWord() {
-    const apiUrl = "https://random-word-api.herokuapp.com/word?length=5";
+    const apiUrl = "https://api.datamuse.com/words?sp=?????&max=100"; // Get 100 words
 
     try {
         const response = await fetch(apiUrl);
         const data = await response.json();
 
-        // Check if the API response is valid
         if (Array.isArray(data) && data.length > 0) {
-            return data[0].toUpperCase(); // Return the word in uppercase
+            const randomWord = data[Math.floor(Math.random() * data.length)].word; // Pick a random word
+            return randomWord.toUpperCase(); // Convert to uppercase
         } else {
             console.error("No valid word received.");
-            return "ERROR"; // Return "ERROR" if no valid word is received
+            return "ERROR"; // Fallback word
         }
     } catch (error) {
         console.error("Error fetching word:", error);
-        return "ERROR"; // Return "ERROR" if an error occurs during the fetch
+        return "ERROR"; // Fallback word
     }
 }
+
+
 
 // Function to initialize the game board with empty tiles
 function initialize() {

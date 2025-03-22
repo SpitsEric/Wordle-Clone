@@ -1,9 +1,12 @@
 /* General Styles */
-body {
-    font-family: 'Times New Roman', Times, serif;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    background-color: rgb(31, 31, 31);
-    color: white; /* Default text color */
+    background-color: #242424;
 }
 
 hr {
@@ -12,6 +15,7 @@ hr {
 
 /* Wordle Title */
 #title {
+    color: white;
     font-size: 12rem;
     font-weight: bold;
     letter-spacing: 2px;
@@ -31,6 +35,7 @@ hr {
 
 /* Wordle Answer */
 #answer {
+    color: white;
     margin-top: 600px;
     font-size: 5rem;
 }
@@ -91,6 +96,7 @@ hr {
 
 /* Tiles */
 .tile {
+    color: white;
     border: 2px solid rgba(211, 211, 211, 0.603);
     width: 10rem;
     height: 10rem;
