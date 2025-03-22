@@ -14,7 +14,7 @@ html, body {
     flex-direction: column;
     text-align: center;
     background-color: #242424;
-    zoom: 1;
+    transform: scale(1);
 }
 
 hr {
@@ -25,15 +25,15 @@ hr {
 /* Wordle Title */
 #title {
     color: white;
-    font-size: 12rem;
+    font-size: 8vw;
     font-weight: bold;
     letter-spacing: 2px;
 }
 
 /* Wordle Board */
 #board {
-    height: 40rem;
-    width: 60rem;
+    height: 100%;
+    width: 30%;
     margin: 20px auto 0;
     display: flex;
     flex-wrap: wrap;
@@ -45,8 +45,8 @@ hr {
 /* Wordle Answer */
 #answer {
     color: white;
-    margin-top: 600px;
-    font-size: 5rem;
+    margin-top: 40vh;
+    font-size: 3vw;
 }
 
 /* Keyboard */
@@ -68,8 +68,8 @@ hr {
 .key {
     color: white;
     font-weight: bold;
-    height: 10rem;
-    width: 12rem;
+    height: 6vhvh;
+    width: 8vw;
     font-size: 6rem;
     padding: 20px 15px;
     margin: 10px;
@@ -107,9 +107,9 @@ hr {
 .tile {
     color: white;
     border: 2px solid rgba(211, 211, 211, 0.603);
-    width: 10rem;
-    height: 10rem;
-    margin: 0.5rem;
+    width: 5vw;
+    height: 7vh;
+    margin: 5px;
     font-size: 6rem;
     font-weight: bold;
     display: flex;
