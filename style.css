@@ -14,7 +14,6 @@ html, body {
     flex-direction: column;
     text-align: center;
     background-color: #242424;
-    transform: scale(1);
 }
 
 hr {
@@ -66,7 +65,7 @@ hr {
 .key {
     color: white;
     width: 200px; /* Fixed width */
-    height: 220px; /* Fixed height */
+    height: 200px; /* Fixed height */
     font-size: 60px; /* Adjust text size */
     padding: 10px; /* Consistent padding */
     margin: 5px; /* Ensure spacing remains same */
