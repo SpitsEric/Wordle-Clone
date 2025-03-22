@@ -42,8 +42,8 @@ hr {
 /* Wordle Answer */
 #answer {
     color: white;
-    margin-top: 40vh;
-    font-size: 3vw;
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 /* Keyboard */
@@ -64,19 +64,19 @@ hr {
 
 .key {
     color: white;
-    width: 200px; /* Fixed width */
-    height: 200px; /* Fixed height */
-    font-size: 60px; /* Adjust text size */
+    width: 50px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    font-size: 15px; /* Adjust text size */
     padding: 10px; /* Consistent padding */
-    margin: 5px; /* Ensure spacing remains same */
-    border-radius: 10px;
+    margin: 1px; /* Ensure spacing remains same */
+    border-radius: 5px;
     background-color: #7c7c7c;
     cursor: pointer;
 }
 
 #keyboard button[data-key="Enter"],
 #keyboard button[data-key="Backspace"] {
-    width: 300px;
+    width: 60px;
 }
 
 .key:hover {
@@ -103,10 +103,11 @@ hr {
 .tile {
     color: white;
     border: 2px solid rgba(211, 211, 211, 0.603);
-    width: 150px;
-    height: 150px;
-    margin: 5px;
-    font-size: 6rem;
+    width: 40px;
+    height: 40px;
+    margin: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     font-weight: bold;
     display: flex;
     justify-content: center;

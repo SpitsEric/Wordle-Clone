@@ -89,7 +89,7 @@ document.addEventListener("keyup", (e) => {
                 }
                 if (row == height) { // Check if game is over (all rows filled)
                     gameOver = true;
-                    document.getElementById("answer").innerText = word; // Display the answer
+                    document.getElementById("answer").innerText = "Word: " + word; // Display the answer
                 }
             });
         }
