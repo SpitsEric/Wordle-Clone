@@ -135,3 +135,10 @@ hr {
     background-color: rgb(75, 75, 75);
     border-color: white;
 }
+
+@media (max-width: 600px) {
+    #title {
+        font-size: 50px;
+    }
+
+}
