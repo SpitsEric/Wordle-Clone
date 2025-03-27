@@ -135,23 +135,3 @@ hr {
     background-color: rgb(75, 75, 75);
     border-color: white;
 }
-
-@media (max-width: 600px) {
-    #title {
-        padding-top: 20px;
-        font-size: 50px;
-    }
-
-    .key {
-        width: 40px;
-        height: 60px;
-        font-size: 15px;
-        padding: 5px;
-    }
-
-    #keyboard button[data-key="Enter"],
-    #keyboard button[data-key="Backspace"] {
-        width: 60px;
-    }
-
-}
