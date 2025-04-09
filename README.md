@@ -1,5 +1,7 @@
 # Wordle Clone
 
+[![Website Link](https://img.shields.io/badge/View%20Website-Natalie--Pedigo--Art-brightgreen)](https://spitseric.github.io/Wordle-Clone/)
+
 A basic web-based clone of the popular word guessing game, Wordle. Built with HTML, CSS, and JavaScript.
 
 ## Features
@@ -19,7 +21,8 @@ A basic web-based clone of the popular word guessing game, Wordle. Built with HT
 
 ## Screenshots
 
-![Wordle Clone Screenshot](path/to/your/screenshot.png)
+![Wordle Clone Screenshot](https://github.com/user-attachments/assets/0ef5c0d8-740a-4f7b-a54e-0702faac262e
+)
 *Shows the Wordle game interface.*
 
 ## Technologies Used
